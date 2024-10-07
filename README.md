@@ -1,7 +1,7 @@
 ## Scikit1
 
 ### 1 Problem 1 : Save and Load Machine Learning Models in Python with scikit-learn	(https://www.geeksforgeeks.org/save-and-load-machine-learning-models-in-python-with-scikit-learn/)
-# import packages 
+#### import packages 
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt 
@@ -10,13 +10,13 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics 
 import pickle 
 
-# import the dataset 
+##### import the dataset 
 dataset = pd.read_csv('headbrain1.csv') 
 
 X = dataset.iloc[:, : -1].values 
 Y = dataset.iloc[:, -1].values 
 
-# train test split 
+##### train test split 
 X_train, X_test, y_train, y_test = train_test_split( 
 	X, Y, test_size=0.2, random_state=0) 
 
